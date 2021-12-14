@@ -1,0 +1,32 @@
+.left-navigation-menu__quick-link-images {
+	margin: 12px 0;
+}
+.left-navigation-menu__quick-links-img {
+	@extend %transition;
+	&:hover {
+		transform: scale(0.95);
+	}
+}
+.left-navigation-menu__logout {
+	color: $white-color;
+	padding-bottom: 20px;
+	img {
+		margin-right: 16px;
+	}
+	&:hover {
+		color: $white-color;
+	}
+}
+
+.left-navigation-menu__logout:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 1px;
+	background-color: #253a64;
+	max-width: 96px;
+	width: 100%;
+	opacity: 0.1;
+}

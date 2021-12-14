@@ -1,0 +1,65 @@
+@import "../common/_common-includes.scss";
+
+.doctors-dashboard-information {
+	margin-right: 22px;
+	max-width: 688px;
+	width: 100%;
+	@media (min-width: 992px) and (max-width: 1199px) {
+		max-width: 100%;
+		margin-right: 0px;
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		display: flex;
+		max-width: 100%;
+		gap: 24px;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	// @media (min-width: 1362px) and (max-width: 1399px) {
+	// 	max-width: 100%;
+	// 	gap: 24px;
+	// 	margin-right: 0px;
+	// }
+}
+.doctors-dashboard-information__grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 22px;
+	@media (min-width: 992px) and (max-width: 1199px) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 22px;
+	}
+}
+
+.doctors-dashboard-results {
+	max-width: 466px;
+	width: 100%;
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 20px;
+		max-width: 100%;
+		min-width: 400px;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		max-width: 100%;
+		grid-gap: 20px;
+	}
+}
+.doctors-dashbord-wrapper__body {
+	width: 100%;
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+		flex-direction: column;
+	}
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		flex-direction: column;
+	}
+}
+
+@import "../components/_common-components.scss";

@@ -1,0 +1,22 @@
+.left-navigation-menu__profile {
+	padding: 16px;
+}
+
+.left-navigation-menu__profile-images {
+	max-width: 40px;
+	margin-right: 8px;
+}
+
+.left-navigation-menu__profile-meta {
+	h3 {
+		font-size: 12px;
+		font-weight: $bold-font-weight;
+		margin-bottom: 4px;
+	}
+	a {
+		font-size: 10px;
+		&:hover {
+			color: $white-color;
+		}
+	}
+}

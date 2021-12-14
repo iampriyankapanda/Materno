@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/pages/lab-test/index.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-layout d-flex">
+        <div class="menu-button menu-button_js">
+            <img src="images/generic-icons/Vector.png" class="menu-button__close img-fluid" width="10" height="16" />
+            <img src="images/generic-icons/show-menu.png" class="menu-button__open img-fluid" width="16" />
+        </div>
+        <nav class=" left-navigation-menu position-relative d-flex">
+            <div>
+                <div class="left-navigation-menu__logo-wrapper">
+                    <a href="/"><img src="images/logo.svg" class="img-fluid" /></a>
+                </div>
+                <div class="left-navigation-menu__profile d-flex align-items-center">
+                    <img src="images/left-navigation/profile/profile.png" alt=""
+                        class="left-navigation-menu__profile-images img-fluid" width="40" height="40" />
+                    <div class="left-navigation-menu__profile-meta">
+                        <h3 class="white-color">Dr. James Miller</h3>
+                        <a class="cursor-pointer white-color light-font">VIEW PROFILE</a>
+                    </div>
+                </div>
+                <div class="left-navigation-menu__menu-items">
+                    <ul>
+                        <li>
+                            <a href="#0" class="d-block text-uppercase active">
+                                <div class="left-navigation-menu__menu-items-icons d-inline-block">
+                                    <img src="images/left-navigation/icons/dashboard.svg" class="img-fluid" />
+                                </div>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="d-block text-uppercase false">
+                                <div class="left-navigation-menu__menu-items-icons d-inline-block">
+                                    <img src="images/left-navigation/icons/consult.svg" class="img-fluid" />
+                                </div>
+                                CONSULTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="d-block text-uppercase false">
+                                <div class="left-navigation-menu__menu-items-icons d-inline-block">
+                                    <img src="images/left-navigation/icons/patients.svg" class="img-fluid" />
+                                </div>
+                                PATIENTS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="d-block text-uppercase false">
+                                <div class="left-navigation-menu__menu-items-icons d-inline-block">
+                                    <img src="images/left-navigation/icons/dashboard.svg" class="img-fluid" />
+                                </div>
+                                CARE PLAN
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#0" class="d-block text-uppercase false">
+                                <div class="left-navigation-menu__menu-items-icons d-inline-block">
+                                    <img src="images/left-navigation/icons/chat.svg" class="img-fluid" />
+                                </div>
+                                CHAT
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left-navigation-menu__quick-links px-3">
+                <a href="#0" class="
+              left-navigation-menu__logout
+              position-relative
+              d-flex
+              align-items-center
+            "><img src="images/left-navigation/icons/logout.svg" class="img-fluid" alt="" />Logout</a>
+                <div class="left-navigation-menu__quick-link-images">
+                    <img src="images/left-navigation/nav-quick-links/axia.png"
+                        class="img-fluid mb-3 left-navigation-menu__quick-links-img" /><img
+                        src="images/left-navigation/nav-quick-links/fit-life.png"
+                        class="img-fluid left-navigation-menu__quick-links-img" />
+                </div>
+            </div>
+        </nav>
+        <main class="main-wrapper w-100">
+            <div class="lab-test-wrapper">
+                <h1 class="page-title mb-2">Lab Tests</h1>
+                <div class="lab-test-wrapper__content">
+                    <div class="lab-test-wrapper__tabs-wrapper">
+                        <ul>
+                            <li><a href="#0" class="active">Clinical Reports</a></li>
+                            <li><a href="#0">Lab Test</a></li>
+                        </ul>
+                    </div>
+                    <div class="lab-test-wrapper__tabs-content doctors-dashbord-card-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Date</td>
+                                    <td>Patient</td>
+                                    <td>Test Name</td>
+                                    <td>Status</td>
+                                    <td></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>11-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type false">Normal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>12-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type patient__type--abnormal">Abnormal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>13-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type false">Normal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>14-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type patient__type--abnormal">Abnormal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>15-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type false">Normal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>16-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type patient__type--abnormal">Abnormal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>17-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type false">Normal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>18-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type patient__type--abnormal">Abnormal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                                <tr>
+                                    <td>19-06-202 10:00 am</td>
+                                    <td><a class="patient__name cursor-pointer">Sheila Davis</a></td>
+                                    <td>Thyroid</td>
+                                    <td><span class="patient__type false">Normal</span></td>
+                                    <td class="d-flex justify-content-around"><a class="cursor-pointer"><img
+                                                src="/images/icons/pdf.svg" class="img-fluid" alt=""></a><a
+                                            class="cursor-pointer"><img src="/images/icons/reply.svg" class="img-fluid"
+                                                alt=""></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script/index.js"></script>
+</body>
+
+</html>

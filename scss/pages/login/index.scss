@@ -1,0 +1,99 @@
+@import "../../common/_common-includes.scss";
+@import "../../components/_common-components.scss";
+
+.login-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    background-image: url("/images/bg-login.svg");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: top right;
+}
+.login-wrapper__container {
+    margin: auto;
+    max-width: 528px;
+    width: 100%;
+}
+.login-wrapper__header {
+    max-width: 210px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.login-wrapper__logo-img {
+    width: 56px;
+    height: 56px;
+}
+.login-wrapper__companyy-name {
+    font-weight: $bold-font-weight;
+    font-size: 24px;
+    margin-left: 8px;
+}
+.login-wrapper__body {
+    padding: 64px 64px 48px;
+    box-shadow: 0px 4px 56px rgba(0, 0, 0, 0.16);
+    border-radius: 16px;
+    background-color: $white-color;
+}
+.login-wrapper__form {
+    margin-bottom: 24px;
+}
+.login-wrapper__form-label {
+    font-size: 12px;
+    font-weight: $light-font-weight;
+    color: $theme-terciary-color;
+    margin-bottom: 4px;
+}
+.form-control.login-wrapper__form-input {
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid $theme-border-color;
+    height: 44px;
+    &::placeholder {
+        color: $theme-terciary-color;
+        font-size: 16px;
+        font-weight: $light-font-weight;
+    }
+}
+.login-wrapper__form-title {
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: $bold-font-weight;
+}
+.theme-primary-btn {
+    background-color: $theme-primary-color;
+    border: none;
+    padding: 14px 0;
+    font-weight: $bold-font-weight;
+    color: $white-color;
+    box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    font-size: 16px;
+}
+.login-wrapper__form-text {
+    color: $theme-primary-color;
+    text-align: right;
+    display: block;
+    font-size: 12px;
+    font-weight: $bold-font-weight;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.login-wrapper__form-description {
+    color: $theme-secondary-color;
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+.login-wrapper__form-reset-pwd {
+    margin-top: 24px;
+    color: $theme-terciary-color;
+    font-size: 12px;
+    span {
+        a {
+            font-weight: $bold-font-weight;
+            color: $theme-primary-color;
+        }
+    }
+}

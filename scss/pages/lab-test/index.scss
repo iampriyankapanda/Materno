@@ -1,0 +1,87 @@
+@import "../../common/_common-includes.scss";
+@import "../../components/_common-components.scss";
+
+.lab-test-wrapper__tabs-content {
+	padding: 24px;
+	table {
+		width: 100%;
+		thead {
+			background-color: #f4f6f8;
+			td {
+				border: none;
+				box-shadow: none;
+			}
+		}
+		td {
+			padding: 8px;
+			font-size: 12px;
+		}
+		tbody {
+			td {
+				height: 56px;
+			}
+			tr {
+				&:nth-child(even) {
+					background-color: #f9fafb;
+				}
+			}
+		}
+	}
+}
+
+.patient__name {
+	border-bottom: 1px solid #8590a8;
+	padding-bottom: 2px;
+	@extend %transition;
+}
+
+.patient__type {
+	padding: 4px 8px;
+	display: inline-block;
+	font-weight: $bold-font-weight;
+	background: rgba(145, 158, 171, 0.16);
+	border-radius: 16px;
+}
+
+.patient__type--abnormal {
+	color: #b72136;
+	background: rgba(255, 72, 66, 0.16);
+}
+
+.lab-test-wrapper__tabs-wrapper {
+	margin-bottom: 34px;
+	li {
+		display: inline-block;
+		position: relative;
+		&:after {
+			content: " ";
+			width: 4px;
+			height: 4px;
+			background: rgba(145, 158, 171, 0.56);
+			border-radius: 50%;
+			margin: 0 10px;
+			display: inline-block;
+		}
+		&:last-child {
+			&:after {
+				margin: 0;
+				content: none;
+			}
+		}
+	}
+	a {
+		font-size: 14px;
+		border-bottom: 1px solid transparent;
+		padding-bottom: 2px;
+		color: rgba(145, 158, 171, 0.56);
+		@extend %transition;
+		&.active {
+			border-color: #8590a8;
+			color: #212b36;
+		}
+		&:hover {
+			border-color: #8590a8;
+			color: #212b36;
+		}
+	}
+}

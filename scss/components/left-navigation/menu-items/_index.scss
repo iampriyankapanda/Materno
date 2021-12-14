@@ -1,0 +1,32 @@
+%hoverActiveState {
+	background-color: $theme-primary-dark-color;
+	font-weight: $bold-font-weight;
+}
+
+.left-navigation-menu__menu-items {
+	ul {
+		li {
+			a {
+				font-size: 10px;
+				font-weight: $light-font-weight;
+				padding: 8px 16px;
+				color: $white-color;
+				@extend %transition;
+				&.active {
+					@extend %hoverActiveState;
+				}
+				&:hover {
+					@extend %hoverActiveState;
+				}
+			}
+		}
+	}
+}
+
+.left-navigation-menu__menu-items-icons {
+	display: inline-block;
+	min-width: 34px;
+	img {
+		max-width: 24px;
+	}
+}

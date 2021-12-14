@@ -1,0 +1,75 @@
+.doctors-dashbord-wrapper__header {
+	margin-bottom: 22px;
+	h4 {
+		font-weight: $bold-font-weight;
+		font-size: 16px;
+	}
+	p {
+		font-weight: $light-font-weight;
+	}
+}
+
+.doctors-dashbord-card-wrapper {
+	box-shadow: 0px 1px 16px rgba(0, 0, 0, 0.16);
+	border-radius: 16px;
+	padding: 16px;
+	margin-bottom: 20px;
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		margin-bottom: 0;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		margin-bottom: 0;
+	}
+}
+.flex-2-media {
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		flex: 2;
+		// margin-bottom: 20px;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
+}
+.flex-1-media {
+	@media (min-width: 1200px) and (max-width: 1399px) {
+		flex: 1;
+		min-width: 370px;
+	}
+	@media (min-width: 992px) and (max-width: 1199px) {
+		margin-bottom: 20px;
+	}
+}
+.doctors-dashbord-card-wrapper__header {
+	margin-bottom: 18px;
+	h4 {
+		font-weight: $bold-font-weight;
+		font-size: 16px;
+	}
+	a {
+		color: $theme-primary-color;
+		font-size: 12px;
+		font-weight: $bold-font-weight;
+	}
+}
+
+// .doctors-dashbord-card-wrapper--appointment {
+// 	max-width: 688px;
+// 	width: 100%;
+// }
+// .doctors-dashbord-card-wrapper--results {
+// 	max-width: 466px;
+// 	width: 100%;
+// }
+.doctors-dashbord-card-wrapper__consult {
+	margin-bottom: 18px;
+
+	h4 {
+		font-weight: $bold-font-weight;
+		font-size: 16px;
+	}
+	a {
+		color: $theme-primary-color;
+		font-size: 12px;
+		font-weight: $bold-font-weight;
+	}
+}

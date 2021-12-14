@@ -1,0 +1,215 @@
+@import "normalize.scss";
+
+.text-right {
+	text-align: right;
+}
+.theme-primary-color {
+	color: $theme-primary-color;
+}
+.d-none-desktop {
+	@media (min-width: $tablet-devices-min+px) {
+		display: none;
+	}
+}
+.theme-btn {
+	padding: 10px 24px;
+	border-radius: $base-border-radius;
+	border: none;
+	@extend %text-capitalize;
+	@extend %display-inline-block;
+	&.theme-primary-btn {
+		background-color: $theme-primary-color;
+		color: $white-color;
+		padding: 12px 24px;
+	}
+	&.theme-secondary-btn {
+		background-color: #e8f0fe;
+		color: $theme-primary-color;
+	}
+	&.theme-bordered-btn {
+		border: 1px solid $theme-border-color;
+		padding: 7px 24px;
+		background-color: white;
+		color: $theme-primary-color;
+	}
+}
+
+.custom-container {
+	max-width: 1095px;
+	margin: 0 auto;
+	padding: 0 24px;
+	@media (max-width: $mobile-devices-max-width+px) {
+		padding: 0 16px;
+	}
+}
+.flex-1 {
+	flex: 1;
+}
+.flex-2 {
+	flex: 2;
+}
+.white-color {
+	@extend %white-color;
+}
+.theme-secondary-text-color {
+	@extend %theme-secondary-text-color;
+}
+.theme-secondary-color {
+	color: $theme-secondary-color;
+}
+.normal-font {
+	@extend %normal-font;
+}
+.light-font {
+	@extend %light-font;
+}
+.bold-font {
+	@extend %bold-font;
+}
+.medium-bold-font {
+	@extend %medium-bold-font;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+@media (min-width: $tablet-devices-min+px) {
+	.d-none-tablet-above {
+		display: none;
+	}
+}
+@media (max-width: $mobile-devices-max-width+px) {
+	.d-none-mobile {
+		display: none;
+	}
+	.flex-direction-column-mobile {
+		flex-direction: column;
+	}
+	.mobile-theme-button {
+		height: 36px;
+	}
+}
+@media (min-width: $tablet-devices-min+px) and (max-width: $tablet-devices-max+px) {
+	.flex-direction-column-tablet {
+		flex-direction: column;
+	}
+}
+.form-group {
+	label {
+		margin-left: 5px;
+		@extend %light-font;
+		font-size: (14 / $base-font-size) + rem;
+	}
+	input {
+		&.form-control {
+			height: 44px;
+		}
+	}
+	a.fom-control {
+		padding: 1rem 0;
+	}
+	textarea {
+		resize: none;
+	}
+	.form-control {
+		@extend %placeholder;
+	}
+}
+.cursor-pointer {
+	cursor: pointer;
+}
+.form-error {
+	font-size: (12 / $base-font-size) + rem;
+	margin-top: 5px;
+	color: red;
+	height: 15px;
+}
+.form-group {
+	margin-bottom: 10px;
+}
+.small-font {
+	font-size: (12 / $base-font-size) + rem;
+}
+.display-inline-block {
+	display: inline-block;
+}
+.pagination {
+	justify-content: center;
+	li {
+		@extend %display-inline-block;
+		&:nth-child(1),
+		&:nth-child(2),
+		&:last-child,
+		&:nth-last-child(2) {
+			a {
+				background-color: transparent;
+				font-size: 1rem;
+				width: initial;
+				height: initial;
+				font-weight: $bold-font-weight;
+			}
+			&:hover {
+				a {
+					background-color: transparent;
+					color: $theme-secondary-color;
+				}
+			}
+		}
+		&.active,
+		&:hover {
+			a {
+				background-color: #2e489e;
+				color: $white-color;
+			}
+		}
+		a {
+			@extend %display-inline-block;
+			width: 30px;
+			height: 30px;
+			text-align: center;
+			background-color: $theme-border-color;
+			margin: 0 5px;
+			border-radius: 50%;
+			line-height: 30px;
+			font-size: 12px;
+			@extend %transition;
+		}
+	}
+}
+
+.date-picker1 {
+	input {
+		margin: 0;
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		height: 25px;
+		margin-bottom: 10px;
+		padding-left: 10px;
+	}
+}
+
+.page-title {
+	font-size: 20px;
+	font-weight: $bold-font-weight;
+}
+
+.custom-check-box {
+}
+
+.custom-check-box__ui {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #8590a8;
+	border-radius: 4px;
+	background-image: url("/images/icons/check-white.svg");
+	background-size: 14px;
+	background-repeat: no-repeat;
+	background-position: center;
+	@extend %transition;
+}
+
+.custom-check-box__checkbox:checked ~ .custom-check-box__ui {
+	background-color: #253a64;
+	border-color: #253a64;
+}
